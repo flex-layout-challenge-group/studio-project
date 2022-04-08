@@ -4,10 +4,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: rgb(244, 244, 244);
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 img {
@@ -43,6 +43,7 @@ header {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 15px 0px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 0px 7px 15px 0px rgba(0, 0, 0, 0);
     /* ---- */
+
 }
 
 nav {
@@ -131,7 +132,10 @@ section {
 /* Account preferences */
 
 main{
-    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
 }
 .cards-container {
     display: grid;
@@ -178,9 +182,9 @@ main{
     box-shadow: 0px 10px 13px -7px #000000, 0px 7px 15px 0px rgba(0, 0, 0, 0);
     /* ---- */
 }
-/*  */
-.profileform{
-    width: 80%;
+/* Profile information page */
+.to-the-left{
+    align-self: flex-start;
 }
 /*  */
 /* footer */
