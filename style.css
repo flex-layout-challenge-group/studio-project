@@ -64,7 +64,7 @@ nav {
     height: 50px;
 }
 
-label {
+.search-form label {
     display: none;
 }
 
@@ -86,10 +86,17 @@ label {
     padding-left: 1rem;
 }
 
+.menu a {
+    transition: all 0.3s ease-in;
+}
+
+.menu a:hover{
+    color: rgba(102, 102, 102,0.8);
+}
 /* content */
 section {
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid #000;
     margin: 1rem 0;
     padding: 1rem;
 
@@ -137,7 +144,13 @@ main{
 .card {
     padding: 1rem;
 }
+.card a {
+    transition: all 0.3s ease-in;
+}
 
+.card a:hover{
+    color: rgba(102, 102, 102,0.8);
+}
 .card-top {
     width: 250px;
     height: 180px;
@@ -165,5 +178,9 @@ main{
     box-shadow: 0px 10px 13px -7px #000000, 0px 7px 15px 0px rgba(0, 0, 0, 0);
     /* ---- */
 }
-
+/*  */
+.profileform{
+    width: 80%;
+}
+/*  */
 /* footer */

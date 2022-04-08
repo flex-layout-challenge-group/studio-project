@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rafaela Oliveira Webpage">
     <title>LinkedIn Project</title>
-    <link href="./style.css" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="./style.css" rel="stylesheet">
 
 </head>
 
@@ -35,27 +35,58 @@
         </nav>
     </header>
     <main>
-        <a href="./account_preferences.html"><h1>Profile information</h1></a>
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-top dark-board"><span class="material-icons md-100">person</span></div>
-                <div class="card-bottom light-board">
+        <a href="./account_preferences.html">
+            <h1>Profile information</h1>
+        </a>
+
+        <section class="profile-container">
+            <form action="" class="profileform">
+                <div class="name">
                     <h2>Name</h2>
+                    <h3>Choose how your name appear to other members</h3>
+                    <h4>* Indicates required</h4>
+                    <label for="f-name">First name*</label><br>
+                    <input type="text" name="f-name" id="f-name"><br>
+                    <label for="l-name">Last name*</label><br>
+                    <input type="text" name="l-name" id="l-name"><br>
+                    <label for="ad-name">Additional name</label><br>
+                    <input type="text" name="ad-name" id="ad-name"><br>
+                    <label for="pron">Pronouns</label><br>
+                    <select name="pron" id="pron"></select><br>
+                    <h4>Let others know how to refer to you.</h4><br>
+                    <p>Learn more about <br><b>gender pronouns</b>.</p>
+
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-top dark-board"><span class="material-icons md-100">school</span></div>
-                <div class="card-bottom light-board">
-                    <h2>Industry <br>& Education</h2>
+                <div class="ind-edu">
+                    <h2>Industry and Education</h2>
+                    <h3>Choose how your profile fields appear to other members</h3>
+                    <h4>* Indicates required</h4>
+                    <label for="headline">Headline*</label><br>
+                    <input type="text" name="headline" id="headline"><br>
+                    <label for="industry">Industry*</label><br>
+                    <select type="text" name="industry" id="industry"></select><br>
+                    <label for="position">Current position</label><br>
+                    <select type="text" name="position" id="position"></select><br>
+                    <label for="education">Education*</label><br>
+                    <select type="text" name="education" id="education"></select> <br>
+                    <input type="checkbox" name="show" id="show">
+                    <label for="show">Show education in my intro</label>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-top dark-board"><span class="material-icons md-100">location_on</span></div>
-                <div class="card-bottom light-board">
+                <div class="location">
                     <h2>Location</h2>
+                    <h3>Choose how your profile fields appear to other members</h3>
+                    <h4>* Indicates required</h4>
+                    <label for="country">Country/Region*</label><br>
+                    <input type="text" name="country" id="country"><br>
+                    <label for="postal-code">Postal code</label><br>
+                    <select name="postal-code" id="postal-code"></select><br>
+                    <label for="city">City/District*</label>
+                    <select name="city" id="city"></select>
+
                 </div>
-            </div>
-        </div>
+                <button type="submit">Save</button>
+            </form>
+        </section>
 
     </main>
 </body>
