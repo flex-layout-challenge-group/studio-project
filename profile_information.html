@@ -15,9 +15,10 @@
 <body>
     <header>
         <nav>
-
             <div class="left-side">
-                <img class="logo" src="../img/LI-In-Bug.png" alt="Global LinkedIn Logo">
+                <a href="../index.html">
+                    <img class="logo" src="../img/LI-In-Bug.png" alt="Global LinkedIn Logo">
+                </a>
                 <form action="" class="search-form">
                     <label for="search">Search</label>
                     <input type="text" class="search" id="search" placeholder="Search">
@@ -25,11 +26,7 @@
             </div>
             <div class="right-side">
                 <ul class="menu">
-                    <li>
-                        <a href="../index.html">
-                            <span class="material-icons md-36">home</span>
-                        </a>
-                    </li>
+
                     <li><span class="material-icons md-36">card_travel</span></li>
                     <li><span class="material-icons md-36">notifications</span></li>
                     <li>
@@ -43,11 +40,11 @@
         </nav>
     </header>
     <main>
-        <a href="./account_preferences.html">
+        <a href="./account_preferences.html" class="to-the-left">
             <h1>Profile information</h1>
         </a>
 
-        <section class="profile-container">
+        <section>
             <form action="" class="profile-form">
                 <div class="name">
                     <h2>Name</h2>
@@ -65,7 +62,7 @@
                         <div class="field"><label for="ad-name">Additional name</label><br>
                             <input type="text" name="ad-name" id="ad-name">
                         </div>
-                        <div class="field">
+                        <div class="field pron">
                             <label for="pron">Pronouns</label><br>
                             <select name="pron" id="pron">
                                 <option value="00">Please select</option>
@@ -77,7 +74,9 @@
                             <h4>Let others know how to refer to you.</h4>
                         </div>
                         <div class="field">
-                            <h4>Learn more about gender pronouns.</h4>
+                            <a href="#">
+                                <h3>Learn more about gender pronouns.</h3>
+                            </a>
                         </div>
                     </div>
 
@@ -104,12 +103,13 @@
                         </div>
                         <div class="field">
                             <label for="education">Education*</label><br>
-                            <select type="text" name="education" id="education">                                <option value="00">Please select</option>
+                            <select type="text" name="education" id="education">
+                                <option value="00">Please select</option>
                             </select>
                         </div>
-                        <div class="field">
-                            <input type="checkbox" name="show" id="show" >
-                            <label for="show">Show education in my intro</label>
+                        <div class="field cbox-center">
+                            <input type="checkbox" name="prof-cbox" class="prof-cbox" id="prof-cbox">
+                            <label for="prof-cbox">Show education in my intro</label>
                         </div>
                     </div>
                 </div>
@@ -139,6 +139,7 @@
 
                 </div>
                 <button type="submit">Save</button>
+
             </form>
         </section>
 
