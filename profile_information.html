@@ -53,43 +53,89 @@
                     <h2>Name</h2>
                     <h3>Choose how your name appear to other members</h3>
                     <h4>* Indicates required</h4>
-                    <label for="f-name">First name*</label><br>
-                    <input type="text" name="f-name" id="f-name"><br>
-                    <label for="l-name">Last name*</label><br>
-                    <input type="text" name="l-name" id="l-name"><br>
-                    <label for="ad-name">Additional name</label><br>
-                    <input type="text" name="ad-name" id="ad-name"><br>
-                    <label for="pron">Pronouns</label><br>
-                    <select name="pron" id="pron"></select><br>
-                    <h4>Let others know how to refer to you.</h4><br>
-                    <p>Learn more about <br><b>gender pronouns</b>.</p>
+                    <div class="fields">
+                        <div class="field"><label for="f-name">First name*</label><br>
+                            <input type="text" name="f-name" id="f-name">
+                        </div>
+
+                        <div class="field"><label for="l-name">Last name*</label><br>
+                            <input type="text" name="l-name" id="l-name">
+                        </div>
+
+                        <div class="field"><label for="ad-name">Additional name</label><br>
+                            <input type="text" name="ad-name" id="ad-name">
+                        </div>
+                        <div class="field">
+                            <label for="pron">Pronouns</label><br>
+                            <select name="pron" id="pron">
+                                <option value="00">Please select</option>
+                                <option value="01">She/Her</option>
+                                <option value="02">He/His</option>
+                                <option value="03">They/Then</option>
+                                <option value="04">Other</option>
+                            </select>
+                            <h4>Let others know how to refer to you.</h4>
+                        </div>
+                        <div class="field">
+                            <h4>Learn more about gender pronouns.</h4>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="ind-edu">
                     <h2>Industry and Education</h2>
                     <h3>Choose how your profile fields appear to other members</h3>
                     <h4>* Indicates required</h4>
-                    <label for="headline">Headline*</label><br>
-                    <input type="text" name="headline" id="headline"><br>
-                    <label for="industry">Industry*</label><br>
-                    <select type="text" name="industry" id="industry"></select><br>
-                    <label for="position">Current position</label><br>
-                    <select type="text" name="position" id="position"></select><br>
-                    <label for="education">Education*</label><br>
-                    <select type="text" name="education" id="education"></select> <br>
-                    <input type="checkbox" name="show" id="show">
-                    <label for="show">Show education in my intro</label>
+                    <div class="fields">
+                        <div class="field"><label for="headline">Headline*</label><br>
+                            <input type="text" name="headline" id="headline">
+                        </div>
+                        <div class="field">
+                            <label for="industry">Industry*</label><br>
+                            <select type="text" name="industry" id="industry">
+                                <option value="00">Please select</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="position">Current position</label><br>
+                            <select type="text" name="position" id="position">
+                                <option value="00">Please select</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="education">Education*</label><br>
+                            <select type="text" name="education" id="education">                                <option value="00">Please select</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <input type="checkbox" name="show" id="show" >
+                            <label for="show">Show education in my intro</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="location">
                     <h2>Location</h2>
                     <h3>Choose how your profile fields appear to other members</h3>
                     <h4>* Indicates required</h4>
-                    <label for="country">Country/Region*</label><br>
-                    <input type="text" name="country" id="country"><br>
-                    <label for="postal-code">Postal code</label><br>
-                    <select name="postal-code" id="postal-code"></select><br>
-                    <label for="city">City/District*</label>
-                    <select name="city" id="city"></select>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="country">Country/Region*</label><br>
+                            <input type="text" name="country" id="country">
+                        </div>
+                        <div class="field">
+                            <label for="postal-code">Postal code</label><br>
+                            <select name="postal-code" id="postal-code">
+                                <option value="00">Please select</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="city">City/District*</label><br>
+                            <select name="city" id="city">
+                                <option value="00">Please select</option>
+                            </select>
+                        </div>
+
+                    </div>
 
                 </div>
                 <button type="submit">Save</button>
