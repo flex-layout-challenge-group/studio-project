@@ -357,14 +357,13 @@ button {
 
 .radio {
     background-color: aqua;
-    align-self: flex-start;
 }
 
 /* .forms {
    background-color: blueviolet;
    width: 100%;
 } */
-
+ 
 .imgs img {
     width: 90%;
     margin-bottom: 1rem;
