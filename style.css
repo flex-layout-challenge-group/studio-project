@@ -347,12 +347,17 @@ button {
 /*---------------------------------------------*/
 /* Visibility */
 
-.vsblt-board{
+.container {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
     gap: 2rem;
+}
+
+.radio {
+    background-color: aqua;
+    align-self: flex-start;
 }
 
 /* .forms {
@@ -360,13 +365,13 @@ button {
    width: 100%;
 } */
 
-.imgs img{
+.imgs img {
     width: 90%;
     margin-bottom: 1rem;
 }
 
 .inner-board {
-   
+
     margin: 0;
     padding: 1rem;
 
@@ -379,17 +384,18 @@ button {
     font-weight: 600;
 }
 
-.inner-board h4, h5{
+.inner-board h4, h5 {
     margin-bottom: 0.5rem;
 }
 
-.inner-board h5{
+.inner-board h5 {
     font-size: 1rem;
     font-weight: 100;
     font-style: italic;
 }
+
 .inner-board form {
-   margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 /* footer */

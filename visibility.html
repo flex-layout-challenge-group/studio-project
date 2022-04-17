@@ -46,23 +46,29 @@
         <section>
             <h2>Edit your public profile</h2>
             <h3>Choose how your profile appears to non-logged or non-restricted members via search</h3>
-            <div class="vsblt-board">
+
+            <div class="radio">
+                <input type="radio" name="visi_kind" id="pb" checked><label for="pb">Public</label>
+
+                <input type="radio" name="visi_kind" id="sp"><label for="sp">Semi-Private</label>
+                <input type="radio" name="visi_kind" id="pr"><label for="pr">Private</label>
+            </div>    
+            <div class="container">
                 <div class="forms">
                     <div class="inner-board  public" id="public">
                         <h3>Public Profile</h3>
                         <h4>Anyone can access your complete profile</h4>
                     </div>
+                
                     <div class="inner-board semi" id="semi">
                         <h3>Semi-Private Profile</h3>
                         <h4>Only recruiters and 1st level contacts can access your complete profile</h4>
                         <h5>Choose the information available for non-restricted members on your profile</h5>
                         <form action="semi-form">
                             <input type="checkbox" name="loc" id="loc" value="loc">
-                            <label for="loc">Location</label><br>
+                            <label for="loc">Location & Industry</label><br>
                             <input type="checkbox" name="edu" id="edu" value="edu">
                             <label for="edu">Education - Complete Educational history</label><br>
-                            <input type="checkbox" name="ind" id="ind" value="ind">
-                            <label for="ind">Industry</label><br>
                             <input type="checkbox" name="exp" id="exp" value="exp">
                             <label for="exp">Experiences - Complete experiences history including the current
                                 position</label><br>
@@ -77,11 +83,9 @@
                             <label for="prof-info">Profile Information - First and Last Names, Pronouns, Headline
                             </label><br>
                             <input type="checkbox" name="loc" id="loc" value="loc">
-                            <label for="loc">Location</label><br>
+                            <label for="loc">Location & Industry</label><br>
                             <input type="checkbox" name="edu" id="edu" value="edu">
                             <label for="edu">Education - Complete Educational history</label><br>
-                            <input type="checkbox" name="ind" id="ind" value="ind">
-                            <label for="ind">Industry</label><br>
                             <input type="checkbox" name="exp" id="exp" value="exp">
                             <label for="exp">Experiences - Complete experiences history including the current
                                 position</label><br>
