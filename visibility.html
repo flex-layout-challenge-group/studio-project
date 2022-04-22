@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rafaela Oliveira Webpage">
     <title>LinkedIn Project</title>
+    
     <link href="./style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
 
 
 </head>
 
 <body>
-    <header>
+    <header class="shadow">
         <nav>
 
             <div class="left-side">
@@ -21,7 +23,7 @@
                     <img class="logo" src="../img/LI-In-Bug.png" alt="Global LinkedIn Logo">
                 </a>
                 <form action="" class="search-form">
-                    <label for="search">Search</label>
+                    <label for="search" class="hidden-label">Search</label>
                     <input type="text" class="search" id="search" placeholder="Search">
                 </form>
             </div>
@@ -43,17 +45,20 @@
         <a class="to-the-left" href="../account_preferences.html">
             <h1>Visibility</h1>
         </a>
-        <section>
-            <h2>Edit your public profile</h2>
-            <h3>Choose how your profile appears to non-logged or non-restricted members via search</h3>
-
-            <div class="radio">
-                
-                <input type="radio" name="visi_kind" id="pb" checked><label for="pb">Public</label>
-                <input type="radio" name="visi_kind" id="sp"><label for="sp">Semi-Private</label>
-                <input type="radio" name="visi_kind" id="pr"><label for="pr">Private</label>
-            </div>    
-            <div class="container">
+        <section class="shadow">
+            <div class="wrapper shadow">
+                <h2>Edit your public profile</h2>
+                <h3>Choose how your profile appears to non-logged or non-restricted members via search</h3>                        
+                <div class="">
+                    <label for="profile-type" class="hidden-label">Profile Types List</label><br>
+                    <select name="profile-type" class="profile-type" id="profile-type">
+                        <option value="01" selected>Public</option>
+                        <option value="02">Semi-Private</option>
+                        <option value="03">Private</option>
+                    </select>
+                </div>
+            </div>            
+            <div class="container shadow">
                 <div class="forms">
                     <div class="inner-board  public" id="public">
                         <h3>Public Profile</h3>
@@ -94,12 +99,12 @@
     
                 </div>
                 <div class="imgs">
-                    <img src="./img/pfrof-info-complete.png" alt="">
-                    <img src="./img/pfrof-info-semi.png" alt="">
-                    <img src="./img/pfrof-info-private.png" alt="">
-                    <img src="./img/experiences.png" alt="">
-                    <img src="./img/education.png" alt="" >
-                    <img src="./img/restrict.png" alt="">
+                    <img src="./img/pfrof-info-complete.png" alt="" id="img_01">
+                    <img src="./img/pfrof-info-semi.png" alt="" id="img_02">
+                    <img src="./img/pfrof-info-private.png" alt="" id="img_03">
+                    <img src="./img/experiences.png" alt="" id="img_04">
+                    <img src="./img/education.png" alt="" id="img_05">
+                    <img src="./img/restrict.png" alt="" id="img_06">
                 </div>
             </div>
             
