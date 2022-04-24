@@ -203,7 +203,7 @@ main {
 }
 
 .cards-container {
-    background-color: aquamarine;
+    
     width: inherit;
 
     display: grid;
